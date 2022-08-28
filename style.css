@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+  }
+
+/* navbar */
+.navbar-brand{
+  font-size: 20px;
+}
+
+.nav-item{
+  font-size: 20px;
+}
+/* navbar */
+
+/* intro */
+.bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+
+@media (max-width: 1024px) {
+    .bg-image {
+      background-attachment: scroll;
+    }
+}
+
+.display-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+  }
+  
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro {
+    height: 100vh;
+    position: relative;
+    color: black;
+  }
+
+.intro .intro-content {
+    text-align: center;
+    position: absolute;
+}
+
+.intro .intro-title {
+    color: black;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .intro .intro-title {
+      font-size: 3.5rem;
+    }
+}
+
+.intro .intro-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .intro .intro-subtitle {
+      font-size: 2.5rem;
+    }
+}
+
+.intro .overlay-intro {
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+/* intro */
+
+/* about */
+.about-me{
+    padding-top: 4rem;
+}
+
+.about-me .about-title{
+  margin-bottom: 2rem;
+}
+
+.about-me .profile-photo {
+    margin-bottom: 2rem;
+}
+
+.about-me .profile-photo img {
+    margin-left: 10px;
+}
+
+.about-me .subtitle{
+  margin-top: 2rem;
+  line-height: 30px;
+  color: black;  
+}
+
+.about-me .card{
+  margin-bottom: 2rem;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr td{
+  border: 2px solid black;
+  color: black;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .about-me .card {
+    margin-top: 2rem;
+  }
+}
+
+.skill-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.skill-table tr td{
+  border: 0;
+  color: black;
+  text-align: left;
+  width: 50%;
+}
+/* about */
+
+/* portfolio */
+.portfolio-bg{
+  padding-top: 4rem;
+}
+
+.portfolio-bg .portfolio-title{
+  margin-bottom: 2rem;
+}
+/* portfolio */
+
+/* contact us */
+.contact-us{
+  padding-top: 4rem;
+}
+
+.contact-us .contact-title{
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .contact-us .contactform{
+    margin-top: 2rem;
+  }
+}
+
+.contact-us #err-msg{
+  margin-bottom: 1rem;
+  text-align: center;
+}
+/* contact us */
+
+/* animation */
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+@keyframes fadein {
+  from { 
+    opacity: 0; 
+  }
+  to { 
+    opacity: 1; 
+  }
+}
+
+.text-enter{
+  animation-name: wipe-enter;
+  animation-duration: 1s;
+}
+
+.profile-enter{
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+
+/* animation */
